@@ -13,9 +13,15 @@
 		3B18067F2AB04E7800C829D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B18067D2AB04E7800C829D6 /* Main.storyboard */; };
 		3B1806812AB04E7B00C829D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1806802AB04E7B00C829D6 /* Assets.xcassets */; };
 		3B1806842AB04E7B00C829D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1806822AB04E7B00C829D6 /* LaunchScreen.storyboard */; };
+		3B2F976F2AB0638B00A12D78 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2F976E2AB0638B00A12D78 /* ProfilePageViewController.swift */; };
+		3B2F97B82AB1745C00A12D78 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B2F97B62AB1745C00A12D78 /* Model.xcdatamodeld */; };
+		3B2F97BC2AB18FB100A12D78 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2F97BB2AB18FB100A12D78 /* ToDoViewController.swift */; };
+		B1CDE8E3B0DECA5D8B4EAE9B /* Pods_instaprofilepage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D711D9D3023E9E2AD37284 /* Pods_instaprofilepage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13D711D9D3023E9E2AD37284 /* Pods_instaprofilepage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaprofilepage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		358A4ECCE1C72F3DEF930A7C /* Pods-instaprofilepage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaprofilepage.debug.xcconfig"; path = "Target Support Files/Pods-instaprofilepage/Pods-instaprofilepage.debug.xcconfig"; sourceTree = "<group>"; };
 		3B1806742AB04E7800C829D6 /* instaprofilepage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaprofilepage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1806772AB04E7800C829D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B1806792AB04E7800C829D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		3B1806802AB04E7B00C829D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1806832AB04E7B00C829D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B1806852AB04E7B00C829D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2F976E2AB0638B00A12D78 /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
+		3B2F97B72AB1745C00A12D78 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3B2F97BB2AB18FB100A12D78 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		7B51F0209040EB34D049F3D0 /* Pods-instaprofilepage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaprofilepage.release.xcconfig"; path = "Target Support Files/Pods-instaprofilepage/Pods-instaprofilepage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CDE8E3B0DECA5D8B4EAE9B /* Pods_instaprofilepage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32E73906548CF5690B7D4055 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13D711D9D3023E9E2AD37284 /* Pods_instaprofilepage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B18066B2AB04E7800C829D6 = {
 			isa = PBXGroup;
 			children = (
 				3B1806762AB04E7800C829D6 /* instaprofilepage */,
 				3B1806752AB04E7800C829D6 /* Products */,
+				753A101F4BCA6EABB91E19AE /* Pods */,
+				32E73906548CF5690B7D4055 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +80,24 @@
 				3B1806772AB04E7800C829D6 /* AppDelegate.swift */,
 				3B1806792AB04E7800C829D6 /* SceneDelegate.swift */,
 				3B18067B2AB04E7800C829D6 /* ViewController.swift */,
+				3B2F97BB2AB18FB100A12D78 /* ToDoViewController.swift */,
+				3B2F976E2AB0638B00A12D78 /* ProfilePageViewController.swift */,
+				3B2F97B62AB1745C00A12D78 /* Model.xcdatamodeld */,
 				3B18067D2AB04E7800C829D6 /* Main.storyboard */,
 				3B1806802AB04E7B00C829D6 /* Assets.xcassets */,
 				3B1806822AB04E7B00C829D6 /* LaunchScreen.storyboard */,
 				3B1806852AB04E7B00C829D6 /* Info.plist */,
 			);
 			path = instaprofilepage;
+			sourceTree = "<group>";
+		};
+		753A101F4BCA6EABB91E19AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				358A4ECCE1C72F3DEF930A7C /* Pods-instaprofilepage.debug.xcconfig */,
+				7B51F0209040EB34D049F3D0 /* Pods-instaprofilepage.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B1806882AB04E7B00C829D6 /* Build configuration list for PBXNativeTarget "instaprofilepage" */;
 			buildPhases = (
+				0223B07FECA7A27CC1CBDBA9 /* [CP] Check Pods Manifest.lock */,
 				3B1806702AB04E7800C829D6 /* Sources */,
 				3B1806712AB04E7800C829D6 /* Frameworks */,
 				3B1806722AB04E7800C829D6 /* Resources */,
+				3CA66611667296EBA2F5F053 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +168,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0223B07FECA7A27CC1CBDBA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-instaprofilepage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CA66611667296EBA2F5F053 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instaprofilepage/Pods-instaprofilepage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instaprofilepage/Pods-instaprofilepage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-instaprofilepage/Pods-instaprofilepage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B1806702AB04E7800C829D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +217,10 @@
 			files = (
 				3B18067C2AB04E7800C829D6 /* ViewController.swift in Sources */,
 				3B1806782AB04E7800C829D6 /* AppDelegate.swift in Sources */,
+				3B2F97B82AB1745C00A12D78 /* Model.xcdatamodeld in Sources */,
 				3B18067A2AB04E7800C829D6 /* SceneDelegate.swift in Sources */,
+				3B2F976F2AB0638B00A12D78 /* ProfilePageViewController.swift in Sources */,
+				3B2F97BC2AB18FB100A12D78 /* ToDoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +362,7 @@
 		};
 		3B1806892AB04E7B00C829D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 358A4ECCE1C72F3DEF930A7C /* Pods-instaprofilepage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +390,7 @@
 		};
 		3B18068A2AB04E7B00C829D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B51F0209040EB34D049F3D0 /* Pods-instaprofilepage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -356,6 +438,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B2F97B62AB1745C00A12D78 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B2F97B72AB1745C00A12D78 /* Model.xcdatamodel */,
+			);
+			currentVersion = 3B2F97B72AB1745C00A12D78 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3B18066C2AB04E7800C829D6 /* Project object */;
 }
